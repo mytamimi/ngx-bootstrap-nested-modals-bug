@@ -1,0 +1,19 @@
+<div class="modal-header">
+    <h2 class="modal-title pull-left">Main Dialog</h2>
+
+    <button type="button" class="close pull-right" aria-label="Close" (click)="close()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div class="modal-body">
+    <p>This is the main dialog.</p>
+    <p>Select the yellow button, to open another dialog.</p>
+    <p>If you attempt to close the other dialog, this one will disappear!</p>
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-warning" (click)="openSecondDialog()">Open another dialog</button>
+    
+    <button type="button" class="btn btn-primary" (click)="close()">Close</button>
+</div>
